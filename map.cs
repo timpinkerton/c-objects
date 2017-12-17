@@ -14,7 +14,7 @@ namespace TreehouseDefense
         // width and height are "method level" variables. Only exist inside this method. 
         public Map(int width, int height)
         {
-            //initializing the fields
+            // initializing the fields
             // "Width" in the class above equals "width" provided by the user
             Width = width;
             Height = height; 

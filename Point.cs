@@ -7,6 +7,7 @@ namespace TreehouseDefense
         public readonly int X;
         public readonly int Y;
 
+        // this is a constructor method of the Point class
         public Point(int x, int y)
         {
             X = x; 
