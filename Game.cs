@@ -11,7 +11,26 @@ namespace TreehouseDefense
 
             try
             {
-                MapLocation maplocation = new MapLocation(9, 9, map);
+                Path path = new Path(
+                    new [] {
+                        new MapLocation(0, 2, map),
+                        new MapLocation(1, 2, map),
+                        new MapLocation(2, 2, map),
+                        new MapLocation(3, 2, map),
+                        new MapLocation(4, 2, map),
+                        new MapLocation(5, 2, map),
+                        new MapLocation(6, 2, map),
+                        new MapLocation(7, 2, map),
+                    }
+                ); 
+
+                // find the location of a step on the path. 
+                MapLocation location = path.GetLocationAt(8); 
+
+                if (location != null)
+                {
+                    Console.WriteLine(location.X + ", " + location.Y);
+                }
             }
             // declaring a variable for the exception "ex"
             catch(OutOfBoundsException ex)
@@ -22,9 +41,9 @@ namespace TreehouseDefense
             {
                 Console.WriteLine("Unhandled TreehouseDefenseException");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                Console.WriteLine("Unhandled Exception");
+                Console.WriteLine("Unhandled Exception: " + ex);
             }
 
         }
