@@ -24,13 +24,7 @@ namespace TreehouseDefense
                     }
                 ); 
 
-                // find the location of a step on the path. 
-                MapLocation location = path.GetLocationAt(8); 
 
-                if (location != null)
-                {
-                    Console.WriteLine(location.X + ", " + location.Y);
-                }
             }
             // declaring a variable for the exception "ex"
             catch(OutOfBoundsException ex)
