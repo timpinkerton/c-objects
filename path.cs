@@ -7,6 +7,8 @@ namespace TreehouseDefense
         // underscore is common for private fields. 
         private readonly MapLocation[] _path;
 
+        public int Length => _path.Length; 
+
         // constructor method
         public Path(MapLocation[] path)
         {
